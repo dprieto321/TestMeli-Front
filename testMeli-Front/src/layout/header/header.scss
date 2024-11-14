@@ -1,0 +1,14 @@
+@use "../../styles/variables";
+
+.header {
+  background-color: variables.$yellow-primary;
+  padding: 8px 0px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  .containerHeader {
+    display: flex;
+    column-gap: 16px;
+  }
+}
+

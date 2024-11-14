@@ -1,0 +1,54 @@
+@use "../../styles/variables";
+.linkProduct {
+  color: variables.$black-primary;
+  text-decoration: none;
+}
+.productCard {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid variables.$gray-light;
+  padding: 16px;
+  margin-bottom: 10px;
+  color: variables.$black-primary;
+  text-decoration: none;
+  .productCardContent {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    column-gap: 16px;
+    .leftProduct {
+      flex-shrink: 0;
+      img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.centerProduct {
+  flex-grow: 1;
+  max-width: 420px;
+  padding-top: 32px;
+  p {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .containerPrice {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 8px;
+    margin-bottom: 24px;
+  }
+}
+
+.rightProduct {
+  padding-right: 50px;
+  color: variables.$gray-medium;
+  padding-top: 32px;
+}

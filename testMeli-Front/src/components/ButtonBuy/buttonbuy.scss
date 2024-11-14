@@ -1,0 +1,15 @@
+@use "../../styles/variables";
+
+.buyButton {
+  background-color: variables.$blue;
+  color: variables.$white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    background-color: variables.$blue-hover;
+  }
+}

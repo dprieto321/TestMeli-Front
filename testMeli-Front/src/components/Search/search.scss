@@ -1,0 +1,13 @@
+.searchForm {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+
+  .input {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .button {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}

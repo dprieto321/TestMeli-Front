@@ -1,0 +1,10 @@
+@use "../../styles/variables";
+
+.breadcrumb {
+  padding: 16px 0;
+  .breadCrumbLink {
+    font-size: 14px;
+    color: variables.$gray-dark;
+    text-decoration: none;
+  }
+}

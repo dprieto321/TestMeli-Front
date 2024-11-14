@@ -1,0 +1,74 @@
+@use "../../styles/variables";
+
+.detailItem {
+  padding: 32px;
+}
+.detailItemTop {
+  display: flex;
+  gap: 20px;
+
+  .detailImage {
+    flex: 1;
+    img {
+      width: 680px;
+      max-width: 680px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .detailInfo {
+    flex: 1;
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    .detailCondition {
+      font-size: 14px;
+      color: variables.$black-primary;
+      margin-bottom: 16px;
+    }
+    .detailTitle {
+      font-size: 24px;
+      color: variables.$black-primary;
+      max-width: 290px;
+      line-height: 28px;
+      font-weight: 500;
+    }
+    .detailPrice {
+      font-size: 24px;
+      color: variables.$black-primary;
+      max-width: 290px;
+      line-height: 28px;
+      margin: 32px 0px;
+    }
+  }
+}
+.detailDescription {
+  max-width: 698px;
+  margin-top: 32px;
+  .titleDescription {
+    font-size: 28px;
+    line-height: 32px;
+    color: variables.$black-primary;
+    margin-bottom: 32px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 20px;
+    color: variables.$gray-medium;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detailItemTop {
+    flex-direction: column;
+    align-items: center;
+
+    .detailImage,
+    .detailInfo {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

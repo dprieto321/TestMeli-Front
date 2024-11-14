@@ -1,0 +1,8 @@
+@use "../../styles/variables";
+
+.button {
+  background-color: variables.$gray-light;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
